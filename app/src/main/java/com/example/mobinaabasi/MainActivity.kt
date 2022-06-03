@@ -24,6 +24,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.btnBio.setOnClickListener {
+
+            Intent(this,FallActivity::class.java).also {
+                startActivity(it)
+            }
+
+        }
+
 
 
 

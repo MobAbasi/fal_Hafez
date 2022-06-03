@@ -8,16 +8,48 @@
     android:background="@drawable/paperold">
 
 
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableRight="@drawable/ic_baseline_refresh_24"
+        android:fontFamily="@font/lalezar"
+        android:outlineSpotShadowColor="#00FFFFFF"
+        android:text="فال مجدد"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_backspace_24"
+        android:fontFamily="@font/lalezar"
+        android:outlineSpotShadowColor="#00FFFFFF"
+        android:text="بازگشت"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981">
+        app:layout_constraintVertical_bias="0.713">
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -104,6 +136,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lalezar"
+        android:text="تعبیر فال حافظ شما"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

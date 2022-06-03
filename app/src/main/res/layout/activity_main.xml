@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_fal"
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:backgroundTint="#6FB3A5A5"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_bio"
         android:layout_width="170dp"
         android:layout_height="55dp"
         android:backgroundTint="#6FB3A5A5"

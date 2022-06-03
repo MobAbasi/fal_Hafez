@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnFal.setOnClickListener {
 
-            Intent()
+            Intent(this,FallActivity::class.java).also {
+                startActivity(it)
+            }
 
 
         }

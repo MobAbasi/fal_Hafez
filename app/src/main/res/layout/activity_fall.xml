@@ -4,15 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FallActivity">
+    tools:context=".FallActivity"
+    android:background="@drawable/paperold">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lalezar"
+                    android:gravity="center"
+                    android:text="لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است\n لورم اپسوم یک متن آزمایشی است"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/translate_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="367dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="@font/rokh_light"
+            android:gravity="center"
+            android:text="لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fallActivity"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/lalezar"
+        android:text="غزل شماره35"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

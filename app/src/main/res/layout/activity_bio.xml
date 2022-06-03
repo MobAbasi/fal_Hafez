@@ -21,6 +21,264 @@
         app:layout_constraintVertical_bias="0.576">
 
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/lalezar"
+            android:text="ابن حسام خوسفی"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ تولد(هجری):782"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ وفات(هجری):875"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="130dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/lalezar"
+            android:text="زادگاه:خوسف"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.276"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ تولد(هجری):782"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/lalezar"
+            android:text="ابن حسام خوسفی"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="130dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/lalezar"
+            android:text="زادگاه:خوسف"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.341"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ تولد(هجری):782"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ وفات(هجری):875"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="130dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/lalezar"
+            android:text="زادگاه:خوسف"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.768"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ وفات(هجری):875"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="ابن حسام خوسفی"
+            android:textColor="@color/black"
+
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="ابن حسام خوسفی"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ تولد(هجری):782"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ وفات(هجری):875"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="130dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/lalezar"
+            android:text="زادگاه:خوسف"
+            android:textColor="#B9434141"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/textView13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

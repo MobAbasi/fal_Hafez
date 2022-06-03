@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnBio.setOnClickListener {
 
-            Intent(this,FallActivity::class.java).also {
+            Intent(this,BioActivity::class.java).also {
                 startActivity(it)
             }
 

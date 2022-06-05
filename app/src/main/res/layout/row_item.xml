@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/poet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="درحال دریافت"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ تولد(هجری):"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/birthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="درحال دریافت"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="تاریخ وفات(هجری):"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/deathYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="درحال دریافت"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="زادگاه:"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/birthPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lalezar"
+            android:text="درحال دریافت"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="1dp"
+            android:background="#74000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+
+</androidx.cardview.widget.CardView>

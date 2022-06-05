@@ -25,6 +25,16 @@ class FallActivity : AppCompatActivity() {
 
         }
 
+        binding.refreshBtn.setOnClickListener {
+
+            binding.ghazalTxt.text="غزل شماره 30"
+            binding.sherTxt.text=""
+            binding.tranlateTxt.text=""
+
+
+
+        }
+
 
 
 

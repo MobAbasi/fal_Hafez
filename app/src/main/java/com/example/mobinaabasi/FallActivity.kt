@@ -30,7 +30,7 @@ class FallActivity : AppCompatActivity() {
 
         binding.backBtn.setOnClickListener {
 
-            Intent(this,MainActivity::class.java).also {
+            Intent(this, MainActivity::class.java).also {
                 startActivity(it)
             }
 
@@ -39,17 +39,10 @@ class FallActivity : AppCompatActivity() {
 
         binding.refreshBtn.setOnClickListener {
 
-            binding.ghazalTxt.text="غزل شماره 30"
-            binding.sherTxt.text=""
-            binding.tranlateTxt.text=""
-
-
+            binding.sherTxt.text = getMyData2().toString()
 
         }
         getMyData2()
-
-
-
 
 
     }
@@ -71,7 +64,7 @@ class FallActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<MyDataItem2>, t: Throwable) {
-                Log.d("BioActivity", "onFailure: "+t.message)
+                Log.d("BioActivity", "onFailure: " + t.message)
             }
         })
     }

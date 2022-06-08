@@ -105,7 +105,7 @@
                 android:layout_gravity="right"
                 android:fontFamily="@font/dana"
                 android:gravity="center"
-                android:text="لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است لورم اپسوم یک متن آزمایشی است"
+                android:text="متاسفانه تعبیری یافت نشد"
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"

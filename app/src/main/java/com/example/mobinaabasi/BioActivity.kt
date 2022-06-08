@@ -3,24 +3,27 @@ package com.example.mobinaabasi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.mobinaabasi.ApiBio.ApiInterface
+import com.example.mobinaabasi.ApiBio.MyAdapter
 import com.example.mobinaabasi.ApiBio.MyDataItem
-import com.example.mobinaabasi.databinding.ActivityBioBinding
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-import java.lang.StringBuilder
 
 const val BASE_URL="https://ganjgah.ir/api/ganjoor/"
 class BioActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityBioBinding
+  lateinit var recyclerview:RecyclerView
+    lateinit var myadapter:MyAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBioBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(R.layout.activity_bio)
+
+        recyclerview = findViewById(R.id.bio_recycelerview)
+        recyclerview.layoutManager = LinearLayoutManager(this)
 
         getMyData()
+
 
     }
 
@@ -36,18 +39,10 @@ class BioActivity : AppCompatActivity() {
         val retrofitData = retrofitBuilder.getData()
 
         retrofitData.enqueue(object : Callback<List<MyDataItem>?> {
-            override fun onResponse(
-                call: Call<List<MyDataItem>?>,
-                response: Response<List<MyDataItem>?>
-            ) {
-                val responseBody = response.body()!!
-
-                val myStringBuilder =StringBuilder()
-                for (myData in responseBody){
-                    myStringBuilder.append(myData.name)
-                    myStringBuilder.append("\n")
-                }
-                binding.textView4.text = myStringBuilder
+            override fun onResponse(call: Call<List<MyDataItem>?>, response: Response<List<MyDataItem>?>) {
+                  val responsebody = response.body()!!
+                    myadapter = MyAdapter(applicationContext , responsebody)
+                    recyclerview.adapter = myadapter
 
             }
 

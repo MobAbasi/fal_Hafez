@@ -7,28 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobinaabasi.R
+import retrofit2.Response
 
 class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        var poetName: TextView
-        var birthYear: TextView
-        var deathYear: TextView
-        var birthPlace: TextView
-
-        init {
-            poetName= itemView.poet_name
-            birthYear= itemView.birthYear
-            deathYear= itemView.deathYear
-            birthPlace=itemView.birthPlace
-
-
-
-        }
-
-
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         var itemView = LayoutInflater.from(context).inflate(R.layout.row_item , parent , false)
@@ -36,13 +19,23 @@ class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerV
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.poetName.text=userList[position].name.toString()
-        holder.birthYear.text=userList[position].birthYearInLHijri.toString()
-        holder.deathYear.text=userList[position].deathYearInLHijri.toString()
-        holder.birthPlace.text=userList[position].birthPlace.toString()
+        val ItemsViewModel = userList[position]
+        holder.birthYear.text = ItemsViewModel.birthYearInLHijri.toString()
+        holder.deathYear.text = ItemsViewModel.deathYearInLHijri.toString()
+        holder.birthPlace.text = ItemsViewModel.birthPlace.toString()
+        holder.poet_name.text = ItemsViewModel.nickname.toString()
     }
 
     override fun getItemCount(): Int {
         return userList.size
+    }
+
+
+
+    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val birthYear: TextView = itemView.findViewById(R.id.birthYear)
+        val deathYear: TextView = itemView.findViewById(R.id.deathYear)
+        val birthPlace: TextView = itemView.findViewById(R.id.birthPlace)
+        val poet_name: TextView = itemView.findViewById(R.id.poet_name)
     }
 }
